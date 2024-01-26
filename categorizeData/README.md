@@ -1,22 +1,17 @@
+# YouTube Channel Explorer: Categorize Data
 
-# YouTube Channel Explorer: Discover Similar Channels with Python and YouTube API
-
-### Data Extraction:
----
-Extracts data from YouTube channels using the YouTube API module that I customized, generating CSV files as output.
-
-### Data Transformation:
+### Categorization Model Training
 ----
-Converts CSV files to JSON format using the converExceltoJson module, enhancing data readability and organization.
+Our `trainTestModel` dives deep into a database of previously sponsored YouTube channels. Through machine learning techniques, it learns to categorize new channels into predefined content categories, adapting to the nuances of YouTube's diverse content landscape.
 
-### Categorization Model Training:
+### Categorization Process
 ----
-Trains the machine learning model (trainTestModel) on a database of previously sponsored YouTube channels. The model learns to categorize new channels into predefined content categories.
+We apply the trained model to categorize new YouTube channels into one of the four predefined categories:
+- **No Related**: Channels that do not fit into the other categories.
+- **Cinematic**: Channels specializing in cinematic content creation.
+- **Drone Review**: Channels focused on reviewing drone technology and accessories.
+- **Freestyle/Racing**: Channels dedicated to drone racing and freestyle flying.
 
-### Categorization Process:
-----
-Applies the trained model to categorize new YouTube channels into one of the four predefined categories: "No Related," "Cinematic," "Drone Review," and "Freestyle/Racing."
 
-### Manual Verification:
-----
-Manually reviews a sample of categorized channels to validate the accuracy of the model's predictions.
+
+
